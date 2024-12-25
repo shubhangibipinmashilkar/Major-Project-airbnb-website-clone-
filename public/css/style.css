@@ -1,0 +1,91 @@
+body{
+background-color: aquamarine;
+font-family: "Plus Jakarta Sans", sans-serif !important;;
+font-size:small;  
+}
+
+.navbar{
+    height:5 rem;
+    background-color: white;
+}
+
+.fa-airbnb{
+    font-size: 2rem;
+    color:#FF5A5F;
+}
+
+.nav-link{
+    color:#222222 !important; /*important is used for custom styling overriding(overpower) over bootstrap styling */
+}
+.f-info-links a{
+    text-decoration:none;
+    color:#222222;
+}
+
+.f-info-links a:hover{
+    text-decoration:underline;
+    color:blue;
+}
+.f-info{
+    text-align:center;
+    display:flex;
+    height:8rem;
+    background-color:#ebebeb;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:space-evenly;
+}
+.f-info-links, .f-info-brand{
+    width:100%;
+   display:flex;
+   align-items: center;
+    justify-content: center;
+}
+.f-info-socials, .f-info-brand{
+    width:100%;
+    font-size:1.2rem;
+   display:flex;
+   align-items: center;
+justify-content: center;
+}
+.f-info-socials i{
+    margin-right:1rem;
+    align-items: center;
+}
+
+/* styling cards */
+.card{
+border:none !important;
+margin-bottom:2rem ;
+}
+.card-img-top{
+    border-radius:1rem !important;
+    width:100% !important;
+    object-fit:cover !important;
+}
+.card-body{
+    padding:0 !important;
+}
+
+.listing-link{
+    text-decoration: none;
+}
+
+.card-img-overlay{
+    font-size:xx-large;
+    opacity:1;
+}
+.card-img-overlay:hover{
+    opacity: 0.3;
+    background-color:white;
+    
+}
+
+/* show image */
+.show-img{
+    height:30vh; /*30%of viewport*/
+}
+
+.formBtn{
+    display:inline-block;
+}

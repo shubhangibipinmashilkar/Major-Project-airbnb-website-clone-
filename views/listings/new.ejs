@@ -1,0 +1,70 @@
+
+<% layout('boilerplate')%>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust NEW listing</title>
+</head> -->
+<body>
+    <!-- <h1>Wanderlust - Form to add NEW listing </h1> -->
+    <br>
+    <form method="POST" action="/listings" novalidate class="needs-validation">
+        <div class="row">
+             <div class="col-8 offset-2">
+                <div class="mb-3">
+                    <label for="title">Title : </label>
+                    <input type="text" class="form-control"name="title" id="title" placeholder="Please enter title" required>
+                    <div class="valid-feedback">
+                        Looks good!
+                      </div>
+                </div>
+
+        <div class="mb-3">
+            <label for="description">Description : </label>
+            <input type="text" class="form-control" id="description" name="description" placeholder="Please enter description" required>
+            <div class="invalid-feedback">
+                Please enter a description.
+            </div>
+        </div>
+
+        <div class="mb-3">
+            <label for="image">Image : </label>
+            <input type="text" class="form-control" id="image" name="image" placeholder="Please enter image url">
+        </div>
+<div class="row">
+        <div class="col-md-3">
+            <label for="price">Price : </label>
+            <input type="text" class="form-control" id="price" name="price" placeholder="Please enter price"required>
+            <div class="invalid-feedback">
+                Please enter a valid Price.
+            </div>
+        </div>
+
+    <div class="col-md-4">
+        <label for="location">Location : </label>
+        <input type="text" class="form-control" id="location" name="location" placeholder="Please enter location"required>
+        <div class="invalid-feedback">
+            Please enter a valid Location.
+        </div>
+    </div>
+
+    <div class="col-5">
+        <label for="country">Country : </label>
+        <input type="text" class="form-control" id="country" name="country" placeholder="Please enter country"required>
+        <div class="invalid-feedback">
+            Please enter a valid Country name.
+        </div>
+    </div>
+</div>
+<br><br><br>
+
+        <button class="btn btn-success">Add</button>
+
+        
+    </form>
+</div>
+</div>
+</body>
+<!-- </html> -->

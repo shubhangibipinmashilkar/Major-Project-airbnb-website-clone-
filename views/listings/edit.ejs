@@ -1,0 +1,58 @@
+<% layout('boilerplate')%>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust edit Listing</title>
+</head> -->
+<body>
+    <h1>Wanderlust - Edit <%= listing.title %></h1>
+    <!-- <h1> Listing id :- <%= listing._id %></h1> -->
+    <form method="POST" action="/listings/<%= listing._id %>?_method=PUT" novalidate class="needs-validation">
+        <div class="row">
+            <div class="col-8 offset-2">
+<div class="mb-3">
+    <label for="title">Title : </label>
+    <textarea placeholder="<%= listing.title %>" name="title" class="form-control" required></textarea>
+    <div class="valid-feedback">Looks good!</div>
+</div>
+
+<div class="mb-3">
+    <label for="title">Description : </label>
+    <textarea placeholder="<%= listing.description %>" name="description" class="form-control" required></textarea>
+    <div class="invalid-feedback">Please enter valid description</div>
+</div>
+
+<div class="mb-3">
+    <label for="Image">Image : </label>
+    <textarea placeholder="<%= listing.image %>" name="image" class="form-control" required></textarea>
+    <div class="invalid-feedback">Please enter valid URL</div>
+</div>
+<div class="row">
+    <div class="col-md-3">
+        <label for="price"><b>Price : </b> </label>
+        <textarea placeholder="<%= listing.price%>" name="price" class="form-control" required></textarea>
+        <div class="invalid-feedback">Please enter valid price</div>
+    </div>
+    <div class="col-md-4">
+        <label for="location">Location : </label>
+    <textarea placeholder="<%= listing.location %>" name="location" class="form-control" required></textarea>
+    <div class="invalid-feedback">Please enter valid location</div>
+    </div>
+    <div class="col-md-5">
+        <label for="country">Country : </label>
+        <textarea placeholder="<%= listing.country %>" name="country" class="form-control" required></textarea>
+        <div class="invalid-feedback">Please enter valid country name</div>
+    </div>
+</div>
+
+<br><br><br>
+
+        <button class="btn btn-warning">Update</button>
+
+    </form>
+    </div>
+</div>
+</body>
+<!-- </html> -->
